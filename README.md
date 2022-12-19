@@ -20,7 +20,7 @@ You need to know:
 - Able to update the UI of the app based on user input.
 - Able to add a click listener to a Button.
 
-
+    
 Getting Started
 ---------------
 
