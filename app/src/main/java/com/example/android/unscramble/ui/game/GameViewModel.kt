@@ -18,8 +18,6 @@ class GameViewModel : ViewModel() {
 
     // Declare private mutable variable that can only be modified
     // within the class it is declared.
-
-
     private var _currentWordCount = MutableLiveData(0)
     private var _score = MutableLiveData(0)
 
@@ -28,8 +26,6 @@ class GameViewModel : ViewModel() {
     // Return the private property's value in the getter method.
     // When count is accessed, the get() function is called and
     // the value of _count is returned.
-
-    //val currentScrambledWord: String get() = _currentScrambledWord
     val score: LiveData<Int> get() = _score
     val currentWordCount: LiveData<Int> get() = _currentWordCount
 
@@ -50,7 +46,6 @@ class GameViewModel : ViewModel() {
             spannable
         }
     }
-
 
     init {
         Log.d("GameFragment", "GameViewModel created!")
